@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
@@ -19,6 +21,7 @@ class Display extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
               child: CircleAvatar(
@@ -26,6 +29,48 @@ class Display extends StatelessWidget {
                 radius: 50.0,
               ),
             ),
+            SizedBox(height: 30),
+            Text(
+              'NAME',
+              style: TextStyle(
+                color: Colors.white,
+                letterSpacing: 2,
+              ),
+            ),
+            SizedBox(height: 3),
+            Text(
+              'RUSIRU',
+              style: TextStyle(
+                color: Colors.amber,
+                letterSpacing: 2,
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(height: 30),
+            Text(
+              'CURRENT NINJA LEVEL',
+              style: TextStyle(
+                color: Colors.white,
+                letterSpacing: 2,
+              ),
+            ),
+            SizedBox(height: 3),
+            Text(
+              '8',
+              style: TextStyle(
+                color: Colors.amber,
+                letterSpacing: 2,
+                fontSize: 20,
+              ),
+            ),
+            SizedBox(height: 30),
+            Row(
+              children: [
+                Icon(
+                  Icons.email,
+                ),
+              ],
+            )
           ],
         ),
       ),
