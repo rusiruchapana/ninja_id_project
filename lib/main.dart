@@ -16,6 +16,19 @@ class Display extends StatelessWidget {
         title: Text('Ninja ID Card'),
         centerTitle: true,
       ),
+      body: Padding(
+        padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
+        child: Column(
+          children: [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/ninja icon.png'),
+                radius: 50.0,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
