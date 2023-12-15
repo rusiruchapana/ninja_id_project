@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Display(),
     ));
 
@@ -68,7 +69,15 @@ class Display extends StatelessWidget {
               children: [
                 Icon(
                   Icons.email,
+                  color: Colors.white70,
                 ),
+                SizedBox(width: 10),
+                Text(
+                  'rusiruchapana@gmail.com',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
+                )
               ],
             )
           ],
